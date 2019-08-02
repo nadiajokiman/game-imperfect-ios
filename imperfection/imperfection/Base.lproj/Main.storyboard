@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="THR-L0-FPn">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Start-->
+        <scene sceneID="gGv-Jc-Y5y">
+            <objects>
+                <viewController title="Start" id="THR-L0-FPn" customClass="ViewController" customModule="imperfection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PwI-RR-xbc">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sky" translatesAutoresizingMaskIntoConstraints="NO" id="hG2-Go-19E">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grass" translatesAutoresizingMaskIntoConstraints="NO" id="QHe-0x-0IJ">
+                                <rect key="frame" x="0.0" y="137" width="667" height="245"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RM7-c4-01z">
+                                <rect key="frame" x="50" y="30" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="sv3-Uc-eSn"/>
+                                    <constraint firstAttribute="width" constant="32" id="uM0-LT-9pq"/>
+                                </constraints>
+                                <state key="normal" image="info"/>
+                                <connections>
+                                    <action selector="info:" destination="THR-L0-FPn" eventType="touchUpInside" id="3FV-Gg-koy"/>
+                                    <segue destination="MiT-J2-q6Q" kind="show" id="v4M-Fw-Qcg"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title1" translatesAutoresizingMaskIntoConstraints="NO" id="Mo2-i9-fPi">
+                                <rect key="frame" x="267" y="0.0" width="300" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Jf3-TH-wWt"/>
+                                    <constraint firstAttribute="height" constant="100" id="j9p-mH-EgM"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ude-Fj-8gc">
+                                <rect key="frame" x="208.5" y="200" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="VGZ-ac-WVR"/>
+                                    <constraint firstAttribute="width" constant="250" id="nEc-oB-pAg"/>
+                                </constraints>
+                                <state key="normal" image="start"/>
+                                <connections>
+                                    <action selector="stop:" destination="THR-L0-FPn" eventType="touchUpInside" id="AHC-iW-s1E"/>
+                                    <segue destination="Jya-5W-40h" kind="show" id="mS3-46-BRN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ude-Fj-8gc" firstAttribute="centerX" secondItem="PwI-RR-xbc" secondAttribute="centerX" id="7zR-fE-UFX"/>
+                            <constraint firstItem="ude-Fj-8gc" firstAttribute="top" secondItem="Mo2-i9-fPi" secondAttribute="bottom" constant="100" id="Ngw-Z0-KWr"/>
+                            <constraint firstItem="ePx-E3-Pup" firstAttribute="trailing" secondItem="hG2-Go-19E" secondAttribute="trailing" id="Os4-ay-2eo"/>
+                            <constraint firstItem="RM7-c4-01z" firstAttribute="leading" secondItem="PwI-RR-xbc" secondAttribute="leadingMargin" constant="30" id="T5s-ok-E6C"/>
+                            <constraint firstItem="ePx-E3-Pup" firstAttribute="trailing" secondItem="QHe-0x-0IJ" secondAttribute="trailing" id="Woy-iz-Hzz"/>
+                            <constraint firstItem="QHe-0x-0IJ" firstAttribute="leading" secondItem="ePx-E3-Pup" secondAttribute="leading" id="XDw-9z-n2a"/>
+                            <constraint firstItem="RM7-c4-01z" firstAttribute="top" secondItem="PwI-RR-xbc" secondAttribute="topMargin" constant="30" id="Xj0-Rg-uqL"/>
+                            <constraint firstItem="ePx-E3-Pup" firstAttribute="trailing" secondItem="Mo2-i9-fPi" secondAttribute="trailing" constant="100" id="cAB-xm-IDP"/>
+                            <constraint firstItem="ePx-E3-Pup" firstAttribute="bottom" secondItem="QHe-0x-0IJ" secondAttribute="bottom" constant="-7" id="kDj-WK-Hkq"/>
+                            <constraint firstItem="hG2-Go-19E" firstAttribute="leading" secondItem="ePx-E3-Pup" secondAttribute="leading" id="m3t-Q3-kGq"/>
+                            <constraint firstItem="ePx-E3-Pup" firstAttribute="bottom" secondItem="hG2-Go-19E" secondAttribute="bottom" id="oKB-oM-fS9"/>
+                            <constraint firstItem="hG2-Go-19E" firstAttribute="top" secondItem="ePx-E3-Pup" secondAttribute="top" id="vl6-ub-b1N"/>
+                            <constraint firstItem="Mo2-i9-fPi" firstAttribute="top" secondItem="PwI-RR-xbc" secondAttribute="topMargin" id="yWj-Ye-WQN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ePx-E3-Pup"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Mo2-i9-fPi" id="NGX-93-H1M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yw9-kB-wEq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.623688155922046" y="373.60000000000002"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="hwD-yi-E3L">
+            <objects>
+                <viewController storyboardIdentifier="vc" id="Jya-5W-40h" customClass="GameViewController" customModule="imperfection" customModuleProvider="target" sceneMemberID="viewController">
+                    <skView key="view" contentMode="scaleToFill" id="G5G-TR-SiH">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="jEs-Sg-6Ys" appends="YES" id="Ix0-AA-MZ5"/>
+                        </connections>
+                    </skView>
+                    <connections>
+                        <segue destination="Qgc-Cd-Lpo" kind="show" identifier="menu" id="nIz-sd-h9w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bkJ-8M-Kna" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="jEs-Sg-6Ys"/>
+            </objects>
+            <point key="canvasLocation" x="-359" y="1330"/>
+        </scene>
+        <!--Task One Controller-->
+        <scene sceneID="OW6-7a-9Kc">
+            <objects>
+                <viewController storyboardIdentifier="menu" id="Qgc-Cd-Lpo" customClass="TaskOneController" customModule="imperfection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V3i-p7-biP">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sky" translatesAutoresizingMaskIntoConstraints="NO" id="Gp3-Fk-vjG">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bus stop" translatesAutoresizingMaskIntoConstraints="NO" id="4LF-LR-Uj1">
+                                <rect key="frame" x="106" y="-43" width="328" height="349"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bus" translatesAutoresizingMaskIntoConstraints="NO" id="5fm-wN-Kh8">
+                                <rect key="frame" x="176" y="20" width="629" height="298"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="girl1" translatesAutoresizingMaskIntoConstraints="NO" id="pTc-mh-efk">
+                                <rect key="frame" x="-35" y="160" width="232" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bad guy 1" translatesAutoresizingMaskIntoConstraints="NO" id="bIP-lk-ZGG">
+                                <rect key="frame" x="41" y="160" width="241" height="136"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="0aL-HL-HFF">
+                                <rect key="frame" x="0.0" y="284" width="667" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="17" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5FS-Oe-D2K">
+                                <rect key="frame" x="325" y="30" width="316.5" height="153"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">You realize that your boss is very strict when it comes to work attendance and that you will face some consequences. But that is not what you are worrying about right now. This suspicious man from earlier is approaching closer to you, and eventually stands next to you.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Courier"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="VDu-R6-RpD">
+                                <rect key="frame" x="334.5" y="198" width="258" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNZ-LC-ZW5">
+                                        <rect key="frame" x="0.0" y="0.0" width="258" height="25"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="13"/>
+                                        <state key="normal" title="Walk to the next bus stop"/>
+                                        <connections>
+                                            <action selector="next:" destination="Qgc-Cd-Lpo" eventType="touchUpInside" id="KkQ-ki-PVb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxb-V1-u5H">
+                                        <rect key="frame" x="0.0" y="55" width="258" height="25"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="13"/>
+                                        <state key="normal" title="Pretend you are calling a friend "/>
+                                        <connections>
+                                            <action selector="next1:" destination="Qgc-Cd-Lpo" eventType="touchUpInside" id="n6O-8G-IPw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5FS-Oe-D2K" firstAttribute="leading" secondItem="V3i-p7-biP" secondAttribute="leading" constant="325" id="Att-4R-oL6"/>
+                            <constraint firstItem="VDu-R6-RpD" firstAttribute="centerX" secondItem="5FS-Oe-D2K" secondAttribute="centerX" constant="-20" id="GoG-ay-dil"/>
+                            <constraint firstItem="VDu-R6-RpD" firstAttribute="top" secondItem="5FS-Oe-D2K" secondAttribute="bottom" constant="15" id="Ixx-Q5-nWl"/>
+                            <constraint firstItem="D28-R1-CgO" firstAttribute="trailing" secondItem="Gp3-Fk-vjG" secondAttribute="trailing" id="OBx-lE-Uxc"/>
+                            <constraint firstItem="D28-R1-CgO" firstAttribute="bottom" secondItem="Gp3-Fk-vjG" secondAttribute="bottom" id="Q8W-ZS-I1a"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="5FS-Oe-D2K" secondAttribute="trailing" id="aIC-XQ-GdE"/>
+                            <constraint firstItem="Gp3-Fk-vjG" firstAttribute="leading" secondItem="D28-R1-CgO" secondAttribute="leading" id="ff6-3i-lAZ"/>
+                            <constraint firstItem="Gp3-Fk-vjG" firstAttribute="top" secondItem="D28-R1-CgO" secondAttribute="top" id="hdF-g0-Im1"/>
+                            <constraint firstItem="5FS-Oe-D2K" firstAttribute="top" secondItem="V3i-p7-biP" secondAttribute="topMargin" constant="30" id="sjR-gB-WR8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="D28-R1-CgO"/>
+                    </view>
+                    <connections>
+                        <outlet property="bus" destination="5fm-wN-Kh8" id="W1r-Ra-HIF"/>
+                        <outlet property="op1" destination="GNZ-LC-ZW5" id="ZNR-2P-VOS"/>
+                        <outlet property="op2" destination="yxb-V1-u5H" id="WPy-QQ-CS5"/>
+                        <outlet property="task" destination="5FS-Oe-D2K" id="63r-fX-mbP"/>
+                        <segue destination="Cp3-SR-r2s" kind="show" identifier="nextTask" id="aZW-fv-SxI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vC6-Rw-o3E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="nWe-Nz-xmd"/>
+            </objects>
+            <point key="canvasLocation" x="-648" y="2292"/>
+        </scene>
+        <!--Start Task2 Controller-->
+        <scene sceneID="NS5-iY-NjX">
+            <objects>
+                <viewController id="Cp3-SR-r2s" customClass="startTask2Controller" customModule="imperfection" customModuleProvider="target" sceneMemberID="viewController">
+                    <skView key="view" contentMode="scaleToFill" id="ga6-er-qMd">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </skView>
+                    <connections>
+                        <segue destination="fBU-3M-7dm" kind="show" identifier="city" id="7To-72-CHt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M8l-wQ-lfD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-225" y="3247"/>
+        </scene>
+        <!--Task Two Controller-->
+        <scene sceneID="XLY-AU-J7M">
+            <objects>
+                <viewController id="fBU-3M-7dm" customClass="TaskTwoController" customModule="imperfection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lu1-n4-k23">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="city" translatesAutoresizingMaskIntoConstraints="NO" id="XOv-6f-5u4">
+                                <rect key="frame" x="-51" y="-98" width="1040" height="396"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="vTE-Ax-a1L">
+                                <rect key="frame" x="0.0" y="287" width="667" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bad guy 2" translatesAutoresizingMaskIntoConstraints="NO" id="7hL-kO-52B">
+                                <rect key="frame" x="91" y="170" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="girl1" translatesAutoresizingMaskIntoConstraints="NO" id="ctn-dk-5HT">
+                                <rect key="frame" x="46" y="160" width="168" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06D-Ff-Aks">
+                                <rect key="frame" x="300" y="30" width="337" height="153"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">You realize that your boss is very strict when it comes to work attendance and that you will face some consequences. But that is not what you are worrying about right now. This suspicious man from earlier is approaching closer to you, and eventually stands next to you.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Courier"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="efB-p0-gGz">
+                                <rect key="frame" x="319.5" y="203" width="258" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iga-Nn-2Wi">
+                                        <rect key="frame" x="0.0" y="0.0" width="258" height="25"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="13"/>
+                                        <state key="normal" title="Walk to the next bus stop"/>
+                                        <connections>
+                                            <action selector="next:" destination="Qgc-Cd-Lpo" eventType="touchUpInside" id="T5Z-Hn-jBS"/>
+                                            <action selector="next:" destination="fBU-3M-7dm" eventType="touchUpInside" id="fiR-wl-0vN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqh-ng-ifm">
+                                        <rect key="frame" x="0.0" y="55" width="258" height="25"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="13"/>
+                                        <state key="normal" title="Pretend you are calling a friend "/>
+                                        <connections>
+                                            <action selector="next1:" destination="Qgc-Cd-Lpo" eventType="touchUpInside" id="7Sh-Bo-AUr"/>
+                                            <action selector="next1:" destination="fBU-3M-7dm" eventType="touchUpInside" id="Kyx-he-qlp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.47956116315373293" green="0.54122442660515058" blue="0.58790074481865284" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="06D-Ff-Aks" firstAttribute="top" secondItem="FgI-ic-ngQ" secondAttribute="top" constant="30" id="8pj-6r-5cc"/>
+                            <constraint firstItem="efB-p0-gGz" firstAttribute="top" secondItem="06D-Ff-Aks" secondAttribute="bottom" constant="20" id="9lv-x9-0wp"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="06D-Ff-Aks" secondAttribute="trailing" constant="10" id="HD1-eI-CsZ"/>
+                            <constraint firstItem="efB-p0-gGz" firstAttribute="centerX" secondItem="06D-Ff-Aks" secondAttribute="centerX" constant="-20" id="VcM-hJ-Jlf"/>
+                            <constraint firstItem="06D-Ff-Aks" firstAttribute="leading" secondItem="Lu1-n4-k23" secondAttribute="leading" constant="300" id="rXp-M1-BrH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FgI-ic-ngQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="op1" destination="iga-Nn-2Wi" id="tuL-hA-gIr"/>
+                        <outlet property="op2" destination="Uqh-ng-ifm" id="Pa4-H8-WTQ"/>
+                        <outlet property="task" destination="06D-Ff-Aks" id="C12-OT-qQO"/>
+                        <segue destination="Fq6-Nd-jKp" kind="show" identifier="Task3" id="j2F-5O-N7n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="owL-ck-fcy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="522" y="3428"/>
+        </scene>
+        <!--Start Task3 Controller-->
+        <scene sceneID="ANQ-E5-vIe">
+            <objects>
+                <viewController id="Fq6-Nd-jKp" customClass="startTask3Controller" customModule="imperfection" customModuleProvider="target" sceneMemberID="viewController">
+                    <skView key="view" contentMode="scaleToFill" id="9c9-Si-QBS">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </skView>
+                    <connections>
+                        <segue destination="rcu-x0-wL4" kind="show" identifier="doctor" id="Rkl-Nu-NoA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wnT-zG-ouj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="2814"/>
+        </scene>
+        <!--Task Three Controller-->
+        <scene sceneID="f9o-1B-eim">
+            <objects>
+                <viewController id="rcu-x0-wL4" customClass="TaskThreeController" customModule="imperfection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="roj-gd-y8k">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="office" translatesAutoresizingMaskIntoConstraints="NO" id="34U-8U-9mU">
+                                <rect key="frame" x="0.0" y="-454" width="667" height="829"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="54e-UL-mRp">
+                                <rect key="frame" x="0.0" y="284" width="667" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="girl1" translatesAutoresizingMaskIntoConstraints="NO" id="BQ8-bs-9C2">
+                                <rect key="frame" x="71" y="162" width="168" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bad guy 3" translatesAutoresizingMaskIntoConstraints="NO" id="zOU-Et-1C4">
+                                <rect key="frame" x="97" y="169" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIV-dS-a8C">
+                                <rect key="frame" x="320" y="50" width="297" height="170"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">You realize that your boss is very strict when it comes to work attendance and that you will face some consequences. But that is not what you are worrying about right now. This suspicious man from earlier is approaching closer to you, and eventually stands next to you.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Courier"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="pGt-ML-jNb">
+                                <rect key="frame" x="329.5" y="240" width="258" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5B-3J-lLR">
+                                        <rect key="frame" x="0.0" y="0.0" width="258" height="25"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="13"/>
+                                        <state key="normal" title="Walk to the next bus stop"/>
+                                        <connections>
+                                            <action selector="next:" destination="Qgc-Cd-Lpo" eventType="touchUpInside" id="RFH-Rf-bGo"/>
+                                            <action selector="next:" destination="rcu-x0-wL4" eventType="touchUpInside" id="WzZ-78-bl7"/>
+                                            <action selector="next:" destination="fBU-3M-7dm" eventType="touchUpInside" id="kI9-g5-5fC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8M-Ov-ZLJ">
+                                        <rect key="frame" x="0.0" y="55" width="258" height="25"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="13"/>
+                                        <state key="normal" title="Pretend you are calling a friend "/>
+                                        <connections>
+                                            <action selector="next1:" destination="fBU-3M-7dm" eventType="touchUpInside" id="IO2-Tk-Fua"/>
+                                            <action selector="next1:" destination="Qgc-Cd-Lpo" eventType="touchUpInside" id="MHe-wf-hNr"/>
+                                            <action selector="next1:" destination="rcu-x0-wL4" eventType="touchUpInside" id="dH7-Ye-wfx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="doc" translatesAutoresizingMaskIntoConstraints="NO" id="DoT-Zq-QfB">
+                                <rect key="frame" x="12" y="-51" width="335" height="195"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IIV-dS-a8C" secondAttribute="trailing" constant="50" id="0VL-oh-tid"/>
+                            <constraint firstItem="IIV-dS-a8C" firstAttribute="top" secondItem="bjy-zM-fmQ" secondAttribute="top" constant="50" id="8QB-EJ-P7K"/>
+                            <constraint firstItem="pGt-ML-jNb" firstAttribute="centerX" secondItem="IIV-dS-a8C" secondAttribute="centerX" constant="-10" id="Glj-sF-9nF"/>
+                            <constraint firstItem="IIV-dS-a8C" firstAttribute="leading" secondItem="roj-gd-y8k" secondAttribute="leadingMargin" constant="300" id="PcC-8x-cYo"/>
+                            <constraint firstItem="pGt-ML-jNb" firstAttribute="top" secondItem="IIV-dS-a8C" secondAttribute="bottom" constant="20" id="VeO-lB-Qha"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bjy-zM-fmQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="op1" destination="B5B-3J-lLR" id="oNn-aK-imS"/>
+                        <outlet property="op2" destination="u8M-Ov-ZLJ" id="kNZ-2Z-RTC"/>
+                        <outlet property="task" destination="IIV-dS-a8C" id="FkI-If-Fes"/>
+                        <segue destination="97N-Ml-j6w" kind="show" identifier="ending" id="HAa-jt-JIE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jdc-xV-1Wk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1231.9340329835084" y="1948"/>
+        </scene>
+        <!--Final Controller-->
+        <scene sceneID="3NT-bn-UIj">
+            <objects>
+                <viewController id="97N-Ml-j6w" customClass="finalController" customModule="imperfection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ynp-xv-gMj">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="suzys_office" translatesAutoresizingMaskIntoConstraints="NO" id="pk3-xM-SfA">
+                                <rect key="frame" x="-129" y="-25" width="1200" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boss" translatesAutoresizingMaskIntoConstraints="NO" id="prH-Y0-1cp">
+                                <rect key="frame" x="-106" y="163" width="352" height="281"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="man" translatesAutoresizingMaskIntoConstraints="NO" id="fKn-OC-sMf">
+                                <rect key="frame" x="0.0" y="163" width="374" height="227"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="text" translatesAutoresizingMaskIntoConstraints="NO" id="Len-dT-eDd">
+                                <rect key="frame" x="-58" y="-56" width="413" height="324"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="text1" translatesAutoresizingMaskIntoConstraints="NO" id="AcY-AT-OsA">
+                                <rect key="frame" x="-29" y="-56" width="355" height="331"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQ0-2O-dDH">
+                                <rect key="frame" x="40" y="30" width="217" height="90"/>
+                                <string key="text">Good morning Devon, have you finalized the documents for tomorrow’s presentation? Our client will be impressed if we give them our best deal.</string>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88867056369781494" green="0.94953590631484985" blue="0.99369174242019653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rQ0-2O-dDH" firstAttribute="leading" secondItem="bci-9m-i8g" secondAttribute="leading" constant="40" id="6I2-aB-iMk"/>
+                            <constraint firstItem="rQ0-2O-dDH" firstAttribute="top" secondItem="bci-9m-i8g" secondAttribute="top" constant="30" id="7hl-aI-cdn"/>
+                            <constraint firstAttribute="trailing" secondItem="rQ0-2O-dDH" secondAttribute="trailing" constant="410" id="bUk-1a-Cca"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bci-9m-i8g"/>
+                    </view>
+                    <connections>
+                        <outlet property="box" destination="rQ0-2O-dDH" id="bnB-jp-DzC"/>
+                        <outlet property="box1" destination="Len-dT-eDd" id="dg1-fV-beG"/>
+                        <outlet property="box2" destination="AcY-AT-OsA" id="pcO-DV-WGW"/>
+                        <segue destination="Xfa-30-x44" kind="show" identifier="final" id="sIh-pA-gQc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L2u-Ao-N5P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941" y="1154"/>
+        </scene>
+        <!--Thank View Controller-->
+        <scene sceneID="erQ-pm-fiP">
+            <objects>
+                <viewController id="Xfa-30-x44" customClass="ThankViewController" customModule="imperfection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WB9-qf-6T2">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thank" translatesAutoresizingMaskIntoConstraints="NO" id="YAQ-Kg-qCN">
+                                <rect key="frame" x="-400" y="-500" width="1467" height="1275"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1P-Xy-Dju">
+                                <rect key="frame" x="547" y="280" width="85" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="exit"/>
+                                <connections>
+                                    <action selector="next:" destination="Xfa-30-x44" eventType="touchUpInside" id="Xkz-91-w3H"/>
+                                    <segue destination="THR-L0-FPn" kind="show" id="0rf-GO-NY2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzB-JP-9sw">
+                                <rect key="frame" x="100" y="180" width="467" height="136"/>
+                                <string key="text">Thank you for listening to these stories, but most of all thank you for being you. There are times when we doubt our accomplishments and feel incapable of doing what we meant to do due to an internalized fear of failing. However, we want to remind you that there will be others who feel the same way as you and that you are never alone.</string>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8211018458549223" green="0.51454665679554479" blue="0.42150887032561357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iQa-Ww-Aos" firstAttribute="bottom" secondItem="YAQ-Kg-qCN" secondAttribute="bottom" constant="-400" id="JNW-Zb-bEP"/>
+                            <constraint firstItem="YAQ-Kg-qCN" firstAttribute="leading" secondItem="iQa-Ww-Aos" secondAttribute="leading" constant="-400" id="Swn-W2-xvl"/>
+                            <constraint firstItem="iQa-Ww-Aos" firstAttribute="trailing" secondItem="YAQ-Kg-qCN" secondAttribute="trailing" constant="-400" id="by3-FQ-5zx"/>
+                            <constraint firstAttribute="trailing" secondItem="vzB-JP-9sw" secondAttribute="trailing" constant="100" id="p5p-sK-o7k"/>
+                            <constraint firstItem="YAQ-Kg-qCN" firstAttribute="top" secondItem="iQa-Ww-Aos" secondAttribute="top" constant="-500" id="qsA-En-gnP"/>
+                            <constraint firstItem="vzB-JP-9sw" firstAttribute="top" secondItem="iQa-Ww-Aos" secondAttribute="top" constant="180" id="uIt-Jz-b1S"/>
+                            <constraint firstItem="vzB-JP-9sw" firstAttribute="leading" secondItem="iQa-Ww-Aos" secondAttribute="leading" constant="100" id="x2O-R7-wmJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iQa-Ww-Aos"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="YAQ-Kg-qCN" id="uDu-C5-l5S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wV4-Kc-I6I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839.73013493253382" y="373.60000000000002"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="RGC-iQ-f4k">
+            <objects>
+                <viewController title="Info" id="MiT-J2-q6Q" customClass="InfoViewController" customModule="imperfection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L1S-mT-sBw">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="9kW-og-Thb">
+                                <rect key="frame" x="30" y="160.5" width="607" height="54"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Mission" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQY-L7-10h">
+                                        <rect key="frame" x="0.0" y="0.0" width="607" height="24"/>
+                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgf-Hf-X7L">
+                                        <rect key="frame" x="0.0" y="54" width="607" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tH4-Wa-vss">
+                                <rect key="frame" x="50" y="30" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="Kk4-Xz-qA5"/>
+                                    <constraint firstAttribute="height" constant="32" id="gUt-33-Vvb"/>
+                                </constraints>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <segue destination="THR-L0-FPn" kind="show" id="Dqe-YW-iip"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tH4-Wa-vss" firstAttribute="top" secondItem="L1S-mT-sBw" secondAttribute="topMargin" constant="30" id="5m7-k6-RZ9"/>
+                            <constraint firstItem="9kW-og-Thb" firstAttribute="centerY" secondItem="L1S-mT-sBw" secondAttribute="centerY" id="OXe-u3-jAq"/>
+                            <constraint firstAttribute="trailing" secondItem="9kW-og-Thb" secondAttribute="trailing" constant="30" id="QdJ-9E-bKP"/>
+                            <constraint firstItem="9kW-og-Thb" firstAttribute="centerX" secondItem="L1S-mT-sBw" secondAttribute="centerX" id="ebQ-ay-5F6"/>
+                            <constraint firstItem="9kW-og-Thb" firstAttribute="leading" secondItem="L1S-mT-sBw" secondAttribute="leading" constant="30" id="fPl-4N-l8G"/>
+                            <constraint firstItem="tH4-Wa-vss" firstAttribute="leading" secondItem="L1S-mT-sBw" secondAttribute="leadingMargin" constant="30" id="xW9-5G-gGS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="b6L-uA-O7t"/>
+                    </view>
+                    <connections>
+                        <outlet property="text" destination="vgf-Hf-X7L" id="0GV-eb-z3P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fFK-MZ-W1q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="59" y="-396"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="32" height="32"/>
+        <image name="bad guy 1" width="337" height="766"/>
+        <image name="bad guy 2" width="338" height="781"/>
+        <image name="bad guy 3" width="338" height="766"/>
+        <image name="boss" width="100" height="100"/>
+        <image name="bus" width="1200" height="1200"/>
+        <image name="bus stop" width="1200" height="1200"/>
+        <image name="city" width="1200" height="1200"/>
+        <image name="doc" width="100" height="100"/>
+        <image name="exit" width="100" height="100"/>
+        <image name="girl1" width="100" height="100"/>
+        <image name="grass" width="700" height="245"/>
+        <image name="ground" width="300" height="36"/>
+        <image name="info" width="512" height="512"/>
+        <image name="man" width="500" height="500"/>
+        <image name="office" width="1200" height="1200"/>
+        <image name="sky" width="820" height="460"/>
+        <image name="start" width="400" height="400"/>
+        <image name="suzys_office" width="1200" height="1200"/>
+        <image name="text" width="500" height="500"/>
+        <image name="text1" width="500" height="500"/>
+        <image name="thank" width="500" height="500"/>
+        <image name="title1" width="50" height="20"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="0rf-GO-NY2"/>
+    </inferredMetricsTieBreakers>
+</document>
