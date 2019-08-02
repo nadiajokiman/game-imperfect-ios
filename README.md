@@ -1,2 +1,2 @@
-# game-imperfect-ios
+# game-imperfection-ios
 [PROJECT] Women's Rights
