@@ -1,2 +1,2 @@
 # game-imperfection-ios
-[PROJECT] Women's Rights
+[PROJECT] Choose Your Own Adventure Game by advocating Women's Rights for people of all backgrounds
